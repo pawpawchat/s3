@@ -1,0 +1,15 @@
+syntax = "proto3";
+option go_package = "api/pb";
+
+import "message.proto";
+
+message PresignPutObjectRequest {
+    uint64 owner_id = 1;
+    string obj_key = 2;
+    ContentType content_type = 3;
+    oneof file_ext {
+        VideoExt video_ext = 4;
+        ImageExt image_ext = 5;
+        AudioExt audio_ext = 6;
+    }
+}

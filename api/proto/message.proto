@@ -1,0 +1,23 @@
+syntax = "proto3";
+option go_package = "api/pb";
+
+enum ContentType {
+    Video = 0;
+    Image = 1;
+    Audio = 2;
+}
+
+enum VideoExt {
+    mp4 = 0;
+}
+
+enum ImageExt {
+    jpeg = 0;
+    png = 1;
+    bmp = 2;
+}
+
+enum AudioExt {
+    mp3 = 0;
+    wav = 1;
+}

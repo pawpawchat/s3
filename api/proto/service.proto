@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "api/pb";
+
+import "request.proto";
+import "response.proto";
+
+service S3 {
+    rpc PresignPutObject(PresignPutObjectRequest) returns (PresignPutObjectResponse);
+}

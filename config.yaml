@@ -1,0 +1,27 @@
+environment:
+    
+    stage:
+    
+      ServerAddr: chat:9401
+            
+      LogLevel: error
+      
+      database_url: ${DB_STAGE_URL}
+
+    
+    development:
+    
+      ServerAddr: localhost:9401
+      
+      LogLevel: debug
+      
+      database_url: ${DB_DEV_URL}
+    
+    
+    testing:
+    
+      ServerAddr: localhost:9401
+      
+      LogLevel: debug
+      
+      database_url: ${DB_TEST_URL}
